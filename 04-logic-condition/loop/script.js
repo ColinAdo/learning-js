@@ -26,3 +26,19 @@ for (let i = 0; i < names.length; i++) {
     }
     console.log(names[i]);
 }
+
+// Break keyword
+for (let i = 1; i < 10; i++) { 
+    if (i % 2 == 0) {
+        console.log('The first Even number: ',i);
+        break;
+    }
+}
+
+// continue keyword
+for (let i = 1; i < 10; i++) { 
+    if (i % 2 != 0) {
+        console.log('Odd number: ',i);
+        continue;
+    }
+}
