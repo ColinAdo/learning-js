@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(237, 224, 204);
+    font-family: sans-serif;
+}
+
+.shopping-list {
+    margin: auto;
+    max-width: 400px;
+
+}
+
+ul li {
+    list-style: none;
+    margin-left: -40px;
+
+}
+
+.shopping-list a {
+    text-decoration: none;
+}
