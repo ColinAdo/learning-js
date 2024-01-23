@@ -1,15 +1,17 @@
 function addItemOne(item) {
     const li = document.createElement('li');
 
-    li.innerHTML = item
+    li.innerText = item
 
     const link = document.createElement('a');
+    link.href = '';
 
+    // link.innerText = ' x'; Same as
     link.appendChild(document.createTextNode(' x'));
 
     li.appendChild(link);
 
-    document.querySelector('#item').appendChild(li);
+    document.querySelector('.item').appendChild(li);
 }
 
 addItemOne('Milk');
@@ -18,7 +20,7 @@ function addItemTwo(item) {
     const li = document.createElement('li');
 
     li.innerHTML = ` ${item} <a href=""> x</a>`;
-    document.querySelector('#item').appendChild(li);
+    document.querySelector('.item').appendChild(li);
 }
 
 addItemTwo('Sugar');
